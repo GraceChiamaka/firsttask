@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Josefin Slab', serif;
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1{font-size: 4rem;}
+h3{ font-size: 2.5rem; }
+p{ margin-bottom: 10px;}
+.container{
+    width: 1000px;
+    margin: auto;
+}
+.header{
+    background: #17A899;
+    padding: 3rem 2rem;
+    color: #fff;
+    text-align: center;
+}
+.header h1, .header h3{
+    text-align: center;
+}    
+.profile-photo{
+    width: 100%;
+    height: 150px;
+    background-image: url('https://res.cloudinary.com/dguzwntwa/image/upload/v1567011876/HNG%20INTERNSHIP/profile-removebg-preview_rwrl2n.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+.header a{
+    color: #fff;
+    text-decoration: none;
+}
+.header a:hover{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-top:2rem;
+    width: 100%;
+}
+.col-2, .col-8, .col-1{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.col-2{ 
+    width: 30%;
+}
+.col-8{
+    width: 70%;
+}
+.profile, .skills, .experience, .education{
+    padding: 2rem 3rem;
+}
+.profile h3{
+    margin-bottom: 1rem;
+}
+.profile p, .experience p, .education p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills ul li{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.skills ul{
+    padding-inline-start: 60px;
+    padding-top: 10px;
+}
+.vertical-hr{
+    height: 70px;
+    border: 2px solid #17A899;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.hr-lg{
+    height: 190px;
+}
+footer{
+    background: #17A899;
+    color: #fff;
+    text-align: center;
+    padding: 3rem;
+}
+@media screen and (max-width: 1200px ){
+    .container{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 769px){
+    .container{
+        width: 100%;
+    }
+    .profile, .education, .experience, .skills{ padding: 20px;}
+    h1{ font-size: 2rem; }
+    h3{ font-size: 1.5rem; }
+    p{
+        font-size:18px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:600px){
+    h1{ font-size: 2rem; }
+    h3{ font-size: 1.5rem; }
+    p{
+        font-size:15px;
+        margin-bottom: 5px;
+    }
+    .container{
+        width: 100%;
+    }
+    .profile, .education, .experience, .skills{ padding: 20px;}
+    .col-1, .col-2, .col-8, .row{
+        display: block;
+        width: 100%;
+    }
+    .row-sm{ display: flex; }
+    .col-sm-1, .col-sm-8{ display: inline-flex;}
+    .col-sm-1{ width: 9px;}
+    .hr-lg{
+        height: 220px;
+        margin-top: 20px
+    }
+}
