@@ -14,6 +14,8 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Josefin Sans', sans-serif;
 }
 h1{font-size: 4rem;}
+h4{ font-size: 2rem;}
+h5{ font-size: 1.5rem; }
 h3{ font-size: 2.5rem; }
 p{ margin-bottom: 10px;}
 .container{
@@ -62,7 +64,7 @@ p{ margin-bottom: 10px;}
 .col-8{
     width: 70%;
 }
-.profile, .skills, .experience, .education{
+.profile, .skills, .experience, .education, .contact{
     padding: 2rem 3rem;
 }
 .profile h3{
@@ -92,11 +94,81 @@ p{ margin-bottom: 10px;}
 .hr-lg{
     height: 190px;
 }
+.contact-link{
+    color: #17A899;
+    font-weight: bold;
+    text-decoration: none;
+}
+.contact p{
+    margin-top: 1rem;
+}
+form{
+    margin-top: 2rem;
+}
+form h5{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.form-group{
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+}
+.input-form{
+    width:100%;
+    height: 37px;
+    border: 1px solid #526173;
+    padding: 0 10px;
+    color: #526173;
+}
 footer{
     background: #17A899;
     color: #fff;
     text-align: center;
     padding: 3rem;
+}
+textarea.input-form{
+    height: 150px;
+    padding: 10px;
+}
+.contact-footer{
+    padding: 1rem;
+}
+.contact-header{
+    padding: 1rem 2rem;
+}
+.input-form:focus{
+    border: 1px solid #17A899;
+    outline-color: #17A899;
+}
+.error__text{
+    color: red;
+}
+#success{
+    text-align: center;
+    color: #17A899;
+    font-size: 20px;
+    font-weight: 500;
+}
+button.btn-submit{
+    background: #17A899;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    padding: 1rem 2rem;
+    font-size: 18px;
+    font-family: 'Josefin Slab'
+}
+button.btn-submit:hover{
+    background: #0f8579;
+}
+button.btn-submit:focus{
+    background:#0f8579;
+    box-shadow: ;
+}
+#error{
+    width: 100%;
+    text-align: center
 }
 @media screen and (max-width: 1200px ){
     .container{
